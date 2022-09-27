@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="conversion.css">
+</head>
+<body><center><h1>UNIT CONVERTER</h1>
+    <div id="con1">
+        <p style="font-size:22px;;"><b>Mass Converter</b></p>
+        <form name="one">
+            Enter the weight(in grams):<input id="weight" type="text" required>
+             Select the unit:<select name="option" onchange="wgconverter()" style="background-color:#D3D3D3;height:22px;width:150px"> 
+                <option value="seven">select</option>
+                <option value="one">milligram</option>
+                <option value="two">centigram</option>
+                <option value="three">decigram</option>
+                <option value="four">gram</option>
+                <option value="five">kilogram</option>
+                <option value="six">metric ton</option>
+            </select><br><br>
+          Result is:<p id="result"></p>
+        </form>
+    </div>
+    <div id="con2">
+        <p style="font-size:22px;"><b>Lenght Converter</b></p>
+        <form name="two">
+            Enter the length(in meters):<input id="length" type="text" required>
+             Select the unit:<select name="option" onchange="lgconverter()" style="background-color:#D3D3D3;height:22px;width:150px"> 
+                <option value="six">select</option>
+                <option value="one">millimeter</option>
+                <option value="two">centimeter</option>
+                <option value="three">decimeter</option>
+                <option value="four">meter</option>
+                <option value="five">kilometer</option>
+                </select><br><br>
+          Result is:<p id="value"></p>
+        </form>
+   </div>
+   <div id="con3">
+      <p style="font-size:22px;"><b>Time Converter</b></p>
+        <form name="three">
+            Enter the time(in seconds):<input id="time" type="text" required>
+             Select the unit:<select name="option" onchange="tmconverter()" style="background-color:#D3D3D3;height:22px;width:150px"> 
+                <option value="six">select</option>
+                <option value="one">milliseconds</option>
+                <option value="two">seconds</option>
+                <option value="three">minutes</option>
+                <option value="four">hours</option>
+                <option value="five">days</option>
+                </select><br><br>
+          Result is:<p id="solution"></p>
+        </form>
+  </div>
+</center>
+<script src="conversion.js">
+</script></body>
+</html>
